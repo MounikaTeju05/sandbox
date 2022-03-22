@@ -1,0 +1,102 @@
+html{
+       font-family:'open-sans',sans-serif;
+}
+body {
+       background-color:darkgrey;
+       display:flex;
+       justify-content: center;
+       align-items:center;
+       min-height: 100vh;
+       font-weight: bold;
+     }
+    
+.panel{
+       background-color:whitesmoke;
+       border-radius: 10px;
+       padding:5px 5px;
+       width:100%;
+       max-width: 960px;
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       text-transform: uppercase;
+}
+.pricing-plan{
+       border-bottom:1px solid rgba(0, 0, 0, 0.24);
+
+}
+.pricing-plan:last-child {
+       border-bottom: none;
+}
+.pricing-img{
+       margin-bottom: 25px;
+       width:100%;
+       max-width: 100%;
+}
+.pricing-header{
+       color:indigo;
+       font-weight:600;
+       letter-spacing: 1px;
+       text-shadow:brown
+}
+.pricing-features{
+       margin:50px 0 25px;
+       color:darkcyan;
+}
+.pricing-features-items {
+    font-weight:600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid rgb(146, 5, 5)
+}
+.pricing-features-items:last-child{
+       border-bottom: 1px solid rgb(146, 5, 5);
+
+}
+.pricing-price {
+       color:#3c20dbe0;
+       display:block;
+       font-size: 32px;
+       font-weight:700;
+       text-shadow:blue
+
+}
+.pricing-button{
+       border: 1px solid rgba(49, 52, 78, 0);
+       border-radius: 10px;
+       color:#1f2630;
+       display: inline-block;
+       padding: 15px 35px;
+       text-decoration: none;
+       margin:25px 0;
+       transition:background-color 200ms ease-in-out;
+       border-color: #1f2630;
+}
+.pricing-button:hover, .pricing-button:focus {
+       background-color: #e6e1ffda;
+       border-color: #1f2630;
+
+}
+.pricing-button.is-featured {
+       background-color: #48aaff;
+       color:white;
+}
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus{
+       background-color: #269aff;
+       color:white;
+}
+@media (min-width: 900px){
+       .panel{
+              flex-direction: row;
+       }
+       .pricing-plan{
+              border-bottom: none;
+              border-right: 1px solid rgb(146, 5, 5);
+              padding:25px 50px;
+       }
+       .pricing-plan:last-child {
+              border-right:none;
+       }
+}
