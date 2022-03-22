@@ -11,6 +11,7 @@ body{
 .container{
     width: auto;
     height: auto;
+    flex-grow: 1;
 }
 table{
     width:fit-content;
@@ -40,8 +41,19 @@ section{
     border-color: chartreuse;
     border-style: outset;
     border-radius: 30px;
+    flex-grow:1;
+    flex-basis: auto;
+    flex-direction: row;
+
 }
 .id{
     height:100px;
     width: 1000px;
+}
+@media (width:800px){
+    body{
+        width:max-content;
+        height:max-content;
+    }
+
 }
