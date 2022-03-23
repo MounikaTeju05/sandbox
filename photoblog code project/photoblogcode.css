@@ -18,3 +18,9 @@ nav{
     padding: 10px #5a0808;
 
 }
+.port{
+    border-radius:50%;
+}
+.port:hover,.port:focus{
+    border-radius: 50px;
+}
